@@ -77,3 +77,5 @@ while True:
         case "7":
             print("Saliendo del programa.")
             break
+        case _:
+            print("Opcion no valida. Intente de nuevo.")
