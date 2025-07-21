@@ -7,9 +7,7 @@ while True:
     print("5. Invertir cadena de texto")
     print("6. Potencia")
     print("7. Salir")
-
     opcion = input("Selecciona una opción: ")
-
     match opcion:
         case "1":
             def factorial(n):
