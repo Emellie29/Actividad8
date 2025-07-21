@@ -49,13 +49,13 @@ while True:
                     return contar(palabra,letra,indice+1)+1
                 else:
                     return contar(palabra,letra,indice+1)
-            palabra=input("Ingrese una frase: ")
+            palabra=input("Ingrese una palabra: ")
             letra=input("Ingrese una letra para contar: ")
             if len(letra)!=1:
                 print("Por favor ingresa una letra: ")
             else:
                 cantidad=contar(palabra,letra)
-                print(f"la letra {letra} aparece {cantidad} veces en la frase {palabra}.")
+                print(f"la letra {letra} aparece {cantidad} veces en la palabra.")
         case "5":
             def cadena_Invertida(Cadena):
                 if len(Cadena)==0:
@@ -75,5 +75,5 @@ while True:
             exponente=int(input("ingrese un exponente: "))
             print(potencia(base,exponente))
         case "7":
-            print("Saliendo del programa...")
+            print("Saliendo del programa.")
             break
