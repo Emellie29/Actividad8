@@ -1,3 +1,4 @@
+#while True
 print("FACTORIAL")
 def factorial(n):
    if n == 0:
@@ -15,27 +16,35 @@ def suma(n):
     else:
         print(n)
         return n + suma(n-1)
-n=int(input("Ingrese un numero entero para la suma: "))
+n=int(input("Ingrese numero entero positivo: "))
 print(suma(n))
 ########################
 print("FIBONACCI")
-def fibonacci(n):
-    if n<0:
-        return 1
-    elif n==1:
+def Fibonacci(n):
+    if n < 0:
         return 0
+    elif n == 1:
+        return 1
     else:
-        print(n)
-        return n+fibonacci(n-1)
-n=int(input("Ingrese un numero entero n: "))
-print(fibonacci(n))
+        return n + Fibonacci(n - 1) + Fibonacci(n - 2)
+n = int(input("Ingrese un numero entero positivo: "))
+if n > 0:
+    resultado = Fibonacci(n)
+    print(f"La suma de {n}: {resultado}")
+else:
+   print("Intente de nuevo")
 ######################
 print("NO. LETRAS EN LA PALABRA")
-def letra(n):
-    if n == 0:
-        return 0
+#######################
+print("INVERTIR UNA CADENA DE TEXTOS")
+#######################
+print("CALCULAR UNA POTENCIA")
+def potencia(base,exponente):
+    if exponente==0:
+        return 1
     else:
         print(n)
-        return n+letra(n-1)
-n=input("Ingrese la frase que desea evaluar: ")
-print(letra(n))
+        return base*potencia(base,exponente-1)
+base=int(input("ingrese una base: "))
+exponente=int(input("ingrese un exponente: "))
+print(potencia(base,exponente))
